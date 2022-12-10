@@ -1,0 +1,5 @@
+package in.nitish.ratingservices.entities;
+
+public class Rating {
+
+}

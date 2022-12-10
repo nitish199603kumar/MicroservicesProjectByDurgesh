@@ -1,0 +1,12 @@
+package in.nitish.hotelservices.services;
+
+public interface HotelServices {
+	
+	//create
+	
+	//getAll
+	
+	//getOne
+	
+
+}

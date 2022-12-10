@@ -1,0 +1,5 @@
+package in.nitish.hotelservices.exception;
+
+public class ResourceNotFoundException {
+
+}

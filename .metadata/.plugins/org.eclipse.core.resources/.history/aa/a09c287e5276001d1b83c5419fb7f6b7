@@ -1,0 +1,45 @@
+package in.nitish.hotelservices.impl;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
+import org.springframework.stereotype.Service;
+
+import in.nitish.hotelservices.entity.Hotel;
+import in.nitish.hotelservices.repository.HotelRepository;
+import in.nitish.hotelservices.services.HotelServices;
+
+@Service
+public class HotelServicesImpl implements HotelServices {
+
+	@Autowired
+	private HotelRepository hotelRepository;
+
+	@Override
+	public Hotel createHotel(Hotel hotel) {
+		
+		return hotelRepository.save(hotel);
+	}
+
+	@Override
+	public List<Hotel> getAllHotel() {
+		
+		return hotelRepository.findAll();
+	}
+
+	@Override
+	public Hotel getoneHotel(String hotelId) {
+		
+		return hotelRepository.findById(hotelId);
+		
+	}
+	
+	
+}

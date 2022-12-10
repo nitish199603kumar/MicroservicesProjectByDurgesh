@@ -1,0 +1,5 @@
+package in.nitish.hotelservices.entity;
+
+public class Hotel {
+
+}

@@ -1,0 +1,8 @@
+package in.nitish.hotelservices.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Hotel {
+
+}
